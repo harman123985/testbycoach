@@ -54,7 +54,7 @@ def update(Id:int,response:Response,request : schemas.BlogSchema,db:Session = De
     blogs.body=request.body
     
     db.commit()
-    return {"Updated"}
+    return {"Updated Succecfully"}
 
 @app.delete('/blog',tags=['blogs'])
 def delete (Id:int,response:Response,db:Session = Depends(get_db)):
